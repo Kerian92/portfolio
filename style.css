@@ -1,44 +1,46 @@
 
 
-body {
+.ecran {
   font-family: 'Noto Sans JP', sans-serif;
   padding: 0 2%;
   margin: 0;
+  background-color: white;
 }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  position: sticky;
-  top: 0;
-}
-nav .profile {
-  display: flex;
-  align-items: center;
-}
-nav .profile img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-nav .profile h1 {
-  margin-left: 10px;
-  font-size: 15px;
-}
 nav ul {
-  display: flex;
-  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-nav ul li {
-  margin-left: 20px;
-  cursor: pointer;
-  border-bottom: 1px solid #fff;
+
+nav li {
+  display: inline-block;
+  position: relative;
 }
-nav ul li:hover {
-  border-bottom-color: #000;
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+nav ul ul li {
+  display: block;
+
+}
+
+nav li:hover > ul {
+  display: block;
 }
 
 .page-content {

@@ -9,19 +9,27 @@
       Créer un Portfolio Moderne en HTML & CSS et le mettre en Ligne
     </title>
   </head>
-  <body>
+  <body class="ecran">
    <nav>
-      <div class="profile">
-        <img src="image/link.jpg" alt="profile photo" />
-        <h1>Kerian Benramdane</h1>
-      </div>
-     <ul>
-     <li><a href="index.html">Accueil</a></li>
-        <li><a href="veille.html">Veille technologique</a></li>
-        <li><a href="projet.html">Mes projets</a></li>
-        <li><a href="CV 2022 kerian benramdane.docx" download="CV 2022 kerian benramdane.docx">CV</a></li>
-        <li><a href="Rapport de stage.docx" download="Rapport de stage.docx">Rapport de stage</a></li>
-    </nav>
+  <div class="profile">
+    <img src="image/link.jpg" alt="profile photo" style="border-radius: 80%;" />
+    <h1>Kerian Benramdane</h1>
+  </div>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="doc/Veille.pdf" target="_blank">Veille technologique</a></li>
+    <li>
+      <a href="#">Projets</a>
+      <ul>
+        <li><a href="doc/AD2.pdf">Projet 1</a></li>
+        <li><a href="doc/GLPI.pdf" target="_blank">Projet 2</a></li>
+      </ul>
+    </li>
+    <li><a href="CV 2022 kerian benramdane.docx" download="CV 2022 kerian benramdane.docx">CV</a></li>
+    <li><a href="Rapport de stage.docx" download="Rapport de stage.docx">Rapport de stage</a></li>
+  </ul>
+</nav>
+
 
 
     <section class="page-content">
@@ -47,42 +55,45 @@ Bonne navigation !
         <h1>Activités réalisées</h1>
         <div class="projects">
           <div class="project">
-            <h4>Un Active Directory sous Windows Server 2019</h4>
+            <a href="doc/DNS.pdf" target="_blank"><h4>DNS</h4></a>
             <p class="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestias sunt, atque aliquid pariatur.
+             Le système DNS d'Internet fonctionne comme un annuaire téléphonique en gérant le mappage entre les noms et les numéros. Les serveurs DNS traduisent des demandes de noms en adresses IP, en contrôlant à quel serveur un utilisateur final va se connecter quand il tapera un nom de domaine dans son navigateur.
+
             </p>
             <p class="dates">Dates 2022 - 2023</p>
           </div>
           <div class="project">
-            <h4>Un Serveur Proxy</h4>
+            <a href="doc/proxy.pdf" target="_blank"><h4>Un Serveur Proxy</h4></a>
             <p class="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestias sunt, atque aliquid pariatur.
+              Un proxy est une passerelle qui sert d'intermédiaire entre votre ordinateur et les sites web et services Internet que vous utilisez. Il peut faire office de pare-feu, de filtre, de cache ou faciliter les connexions réseau partagées.
             </p>
             <p class="dates">Dates 2022 - 2023</p>
           </div>
           <div class="project">
-            <h4>Wifi</h4>
+            <a href="doc/Nagios.pdf" target="_blank"><h4>Nagios</h4></a>
             <p class="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestias sunt, atque aliquid pariatur.
+              Nagios est une application permettant la surveillance système et réseau. Elle surveille les hôtes et services spécifiés, alertant lorsque les systèmes ont des dysfonctionnements et quand ils repassent en fonctionnement normal.
             </p>
             <p class="dates">Dates 2022 - 2023</p>
           </div>
           <div class="project">
-            <h4>Un VPN</h4>
+            <a href="doc/VPN.pdf" target="_blank"><h4>Un VPN</h4></a>
             <p class="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestias sunt, atque aliquid pariatur.
+              En informatique, un réseau privé virtuel ou réseau virtuel privé, plus communément abrégé en VPN, est un système permettant de créer un lien direct entre des ordinateurs distants, qui isole leurs échanges du reste du trafic se déroulant sur des réseaux de télécommunication publics.
             </p>
             <p class="dates">Dates 2022 - 2023</p>
           </div>
           <div class="project">
-            <h4>Glpi</h4>
+            <a href="doc/OCS.pdf" target="_blank"><h4>OCS Inventory</h4></a>
             <p class="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestias sunt, atque aliquid pariatur.
+              OCS Inventory utilise un agent qui lance un inventaire sur les ordinateurs clients, et un serveur de gestion qui centralise les résultats des inventaires. La console d'administration web permet de visualiser ces résultats d'inventaires, les matériels réseau détectés et de pouvoir créer des paquets de déploiement.
+            </p>
+            <p class="dates">Dates 2022 - 2023</p>
+          </div>
+           <div class="project">
+            <a href="doc/contexte.pdf" target="_blank"><h4>Contexte</h4></a>
+            <p class="description">
+              Ici vous y trouverez mon contexte avec toutes mes machines,adresses ip,routage inter vlan ...
             </p>
             <p class="dates">Dates 2022 - 2023</p>
           </div>
@@ -92,7 +103,7 @@ Bonne navigation !
 
     <footer>
       <div class="colonne">
-        <h3>Mes services</h3>
+        <a href="doc/attestation_atelier_rgpd.pdf" target="_blank"><h3>Certification</h3></a>
         
       </div>
       <div class="colonne">
